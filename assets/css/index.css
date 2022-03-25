@@ -398,7 +398,8 @@ footer {
   width: 100%;
   height: 150px;
   background: #E1B569;
-  justify-items: center; }
+  justify-items: center;
+  margin-top: 60px; }
 
 footer img {
   grid-column: 2/3;
@@ -512,6 +513,56 @@ span {
     text-align: justify;
     margin-top: 50px;
     padding: 25px; } }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 90px;
+  height: auto;
+  align-items: center;
+  justify-content: center; }
+
+.card-items {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  transition: all 400ms ease;
+  align-items: center;
+  cursor: default; }
+  .card-items:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px); }
+  .card-items-img {
+    margin: 0 auto;
+    padding: 10px; }
+  .card-items h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center; }
+  .card-items p {
+    font-size: .8rem;
+    padding: 10px;
+    text-align: justify; }
+  .card-items-btn {
+    width: 100px;
+    height: 30px;
+    margin-left: 90px;
+    margin-top: 30px;
+    border: 1px solid #0609b4;
+    border-radius: 30px;
+    transition: all 400ms ease; }
+    .card-items-btn a {
+      text-decoration: none;
+      color: #0a3696;
+      font-weight: 700; }
+    .card-items-btn a:hover {
+      color: white; }
+  .card-items-btn:hover {
+    background-color: #0609b4;
+    transform: rotate(360deg);
+    transition: all 800ms ease; }
 
 .contacto {
   width: 100%;
