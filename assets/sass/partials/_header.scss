@@ -1,23 +1,24 @@
             .info {
                 width: 100%;
                 height: 20px;
-                background: #E1B569;
+                background: map-get($colors, 'primary');
                 text-align: end;
                 color: white;
-            }
-            
-            .info ul {
-                display: flex;
-                gap: 10px;
-                float: right;
-            }
-            
-            .info ul li {
-                list-style: none;
-            }
-            
-            .info ul li a {
-                text-decoration: none;
+                ul {
+                    display: flex;
+                    gap: 10px;
+                    float: right;
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            i:hover {
+                                transition: all .5s ease;
+                                transform: scale(1.2, 1.2);
+                            }
+                        }
+                    }
+                }
             }
             
             .info .fa-brands,
@@ -42,11 +43,10 @@
                 width: 100%;
                 background-color: #e1b5694d;
                 height: 100px;
-            }
-            
-            .logo img {
-                margin-top: -50px;
-                width: 200px;
+                img {
+                    margin-top: -50px;
+                    width: 200px;
+                }
             }
             
             .nav {
@@ -55,42 +55,34 @@
                 left: 10%;
                 flex-wrap: wrap;
                 margin-left: 300px;
-            }
-            
-            .nav #menu {
-                justify-content: flex-end;
-            }
-            
-            #menu {
-                margin-top: 40px;
-                margin-right: 200px;
-                display: flex;
-                flex-direction: row;
-                justify-content: right;
-                list-style: none;
-            }
-            
-            #menu #submenu {
-                display: none;
-                position: absolute;
-                list-style: none;
-                margin-top: 5px;
-                width: 400px;
-            }
-            
-            #menu #submenu li {
-                display: block;
-            }
-            
-            #menu #submenu li a {
-                font-size: .9rem;
-                padding: 20px;
-            }
-            
-            #menu #submenu li a i {
-                float: left;
-                color: black;
-                margin-top: 15px;
+                #menu {
+                    justify-content: flex-end;
+                    margin-top: 40px;
+                    margin-right: 200px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: right;
+                    list-style: none;
+                    #submenu {
+                        display: none;
+                        position: absolute;
+                        list-style: none;
+                        margin-top: 5px;
+                        width: 400px;
+                        li {
+                            display: block;
+                            a {
+                                font-size: .9rem;
+                                padding: 20px;
+                                i {
+                                    float: left;
+                                    color: black;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
             
             .nav #menu .menu__enlaces:hover #submenu {
@@ -127,22 +119,22 @@
                 width: 100%;
                 position: relative;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-            
-            .frase1 p {
-                position: absolute;
-                left: 47%;
-                top: 200px;
-                color: white;
-                font-size: 45px;
-            }
-            
-            .frase1 span {
-                position: absolute;
-                left: 47%;
-                top: 350px;
-                color: black;
-                font-size: 18px;
+                p {
+                    position: absolute;
+                    left: 47%;
+                    top: 200px;
+                    color: white;
+                    font-size: 45px;
+                    text-shadow: 1px 1px 2px black;
+                }
+                span {
+                    position: absolute;
+                    left: 47%;
+                    top: 350px;
+                    color: black;
+                    font-size: 18px;
+                    text-shadow: 1px 1px 2px white;
+                }
             }
             
             #btn {
@@ -151,26 +143,16 @@
                 top: 450px;
                 padding: 10px;
                 border-radius: 15px;
-                background: #E1B569;
+                background: map-get($colors, 'primary');
                 font-size: 16px;
                 box-shadow: 10px 10px 30px black;
-            }
-            
-            #btn a {
-                text-decoration: none;
-                color: white;
-            }
-            
-            #btn:hover {
-                background: #c79e57;
-            }
-            
-            .frase {
-                color: #E1B569;
-                font-size: 40px;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                &:hover {
+                    background: #c79e57;
+                }
             }
             
             .btn {
@@ -181,10 +163,9 @@
                 height: 30px;
                 align-items: center;
                 background-color: aqua;
-            }
-            
-            .btn a {
-                align-items: center;
+                a {
+                    align-items: center;
+                }
             }
             
             .logo button {
@@ -194,10 +175,9 @@
                 left: 300px;
                 top: 60px;
                 display: none;
-            }
-            
-            .logo button i {
-                font-size: 30px;
+                i {
+                    font-size: 30px;
+                }
             }
             
             // MEDIAS QUERY
@@ -452,7 +432,7 @@
                 .logo button {
                     display: block;
                 }
-                .frase p {
+                .frase title {
                     font-size: .5em;
                     padding: 5px;
                 }

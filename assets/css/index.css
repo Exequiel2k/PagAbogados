@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;1,300;1,400&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Noto Serif Display', serif;
   font-weight: 700;
   box-sizing: border-box; }
@@ -24,17 +24,17 @@ body {
   background: #E1B569;
   text-align: end;
   color: white; }
-
-.info ul {
-  display: flex;
-  gap: 10px;
-  float: right; }
-
-.info ul li {
-  list-style: none; }
-
-.info ul li a {
-  text-decoration: none; }
+  .info ul {
+    display: flex;
+    gap: 10px;
+    float: right; }
+    .info ul li {
+      list-style: none; }
+      .info ul li a {
+        text-decoration: none; }
+        .info ul li a i:hover {
+          transition: all .5s ease;
+          transform: scale(1.2, 1.2); }
 
 .info .fa-brands,
 .fa-solid {
@@ -56,10 +56,9 @@ body {
   width: 100%;
   background-color: #e1b5694d;
   height: 100px; }
-
-.logo img {
-  margin-top: -50px;
-  width: 200px; }
+  .logo img {
+    margin-top: -50px;
+    width: 200px; }
 
 .nav {
   display: flex;
@@ -67,36 +66,29 @@ body {
   left: 10%;
   flex-wrap: wrap;
   margin-left: 300px; }
-
-.nav #menu {
-  justify-content: flex-end; }
-
-#menu {
-  margin-top: 40px;
-  margin-right: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  list-style: none; }
-
-#menu #submenu {
-  display: none;
-  position: absolute;
-  list-style: none;
-  margin-top: 5px;
-  width: 400px; }
-
-#menu #submenu li {
-  display: block; }
-
-#menu #submenu li a {
-  font-size: .9rem;
-  padding: 20px; }
-
-#menu #submenu li a i {
-  float: left;
-  color: black;
-  margin-top: 15px; }
+  .nav #menu {
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none; }
+    .nav #menu #submenu {
+      display: none;
+      position: absolute;
+      list-style: none;
+      margin-top: 5px;
+      width: 400px; }
+      .nav #menu #submenu li {
+        display: block; }
+        .nav #menu #submenu li a {
+          font-size: .9rem;
+          padding: 20px; }
+          .nav #menu #submenu li a i {
+            float: left;
+            color: black;
+            margin-top: 15px; }
 
 .nav #menu .menu__enlaces:hover #submenu {
   display: block; }
@@ -127,20 +119,20 @@ body {
   width: 100%;
   position: relative;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
-
-.frase1 p {
-  position: absolute;
-  left: 47%;
-  top: 200px;
-  color: white;
-  font-size: 45px; }
-
-.frase1 span {
-  position: absolute;
-  left: 47%;
-  top: 350px;
-  color: black;
-  font-size: 18px; }
+  .frase1 p {
+    position: absolute;
+    left: 47%;
+    top: 200px;
+    color: white;
+    font-size: 45px;
+    text-shadow: 1px 1px 2px black; }
+  .frase1 span {
+    position: absolute;
+    left: 47%;
+    top: 350px;
+    color: black;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px white; }
 
 #btn {
   position: absolute;
@@ -151,20 +143,11 @@ body {
   background: #E1B569;
   font-size: 16px;
   box-shadow: 10px 10px 30px black; }
-
-#btn a {
-  text-decoration: none;
-  color: white; }
-
-#btn:hover {
-  background: #c79e57; }
-
-.frase {
-  color: #E1B569;
-  font-size: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center; }
+  #btn a {
+    text-decoration: none;
+    color: white; }
+  #btn:hover {
+    background: #c79e57; }
 
 .btn {
   display: block;
@@ -174,9 +157,8 @@ body {
   height: 30px;
   align-items: center;
   background-color: aqua; }
-
-.btn a {
-  align-items: center; }
+  .btn a {
+    align-items: center; }
 
 .logo button {
   border: 0px;
@@ -185,9 +167,8 @@ body {
   left: 300px;
   top: 60px;
   display: none; }
-
-.logo button i {
-  font-size: 30px; }
+  .logo button i {
+    font-size: 30px; }
 
 @media screen and (max-width: 1652px) {
   .header .nav {
@@ -389,7 +370,7 @@ body {
     display: none; }
   .logo button {
     display: block; }
-  .frase p {
+  .frase title {
     font-size: .5em;
     padding: 5px; } }
 
@@ -449,6 +430,9 @@ span {
   text-align: center;
   padding: 3px;
   font-size: 13px; }
+
+.fotter-nav a {
+  color: black; }
 
 @media screen and (max-width: 1148px) {
   .footer-contacto {
@@ -517,6 +501,14 @@ span {
     margin-top: 50px;
     padding: 25px; } }
 
+.header-banner {
+  background: url(../img/abogacia_UNSTA.jpg);
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
 .card {
   display: flex;
   flex-direction: row;
@@ -533,7 +525,8 @@ span {
   height: 500px;
   transition: all 400ms ease;
   align-items: center;
-  cursor: default; }
+  cursor: default;
+  background-color: rgba(207, 207, 207, 0.363); }
   .card-items:hover {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3px); }
@@ -765,6 +758,13 @@ h2::after {
 
 .links a i {
   font-size: 3rem; }
+
+.frase {
+  color: #E1B569;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center; }
 
 @media screen and (max-width: 1652px) {
   .practica h2::before {

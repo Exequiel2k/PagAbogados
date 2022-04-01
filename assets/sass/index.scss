@@ -50,7 +50,7 @@ h2::after {
     position: absolute;
     width: 120px;
     height: 5px;
-    background-color: black;
+    background-color: map-get($colors, "text");
     top: 70px;
 }
 
@@ -78,7 +78,7 @@ h2::after {
 }
 
 .links a:hover {
-    color: black;
+    color: map-get($colors, "text");
 }
 
 .links a span {
@@ -86,11 +86,19 @@ h2::after {
 }
 
 .links a .iconify {
-    color: black;
+    color: map-get($colors, "text");
 }
 
 .links a i {
     font-size: 3rem;
+}
+
+.frase {
+    color: map-get($colors, 'primary');
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 // MEDIAS QUERY

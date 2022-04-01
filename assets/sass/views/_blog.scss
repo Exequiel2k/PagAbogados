@@ -1,3 +1,12 @@
+.header-banner {
+    background: url(../img/abogacia_UNSTA.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
 .card {
     @include flex;
     height: auto;
@@ -13,6 +22,7 @@
     transition: all 400ms ease;
     align-items: center;
     cursor: default;
+    background-color: rgba(207, 207, 207, 0.363);
     &:hover {
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
         transform: translateY(-3px);
